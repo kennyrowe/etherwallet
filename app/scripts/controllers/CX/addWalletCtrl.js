@@ -45,6 +45,9 @@ var addWalletCtrl = function($scope, $sce) {
                 case nodes.nodeTypes.MUS:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerMusicPath;
                     break;
+                case: nodeTypes.Custom:
+                    $scope.HDWallet.dPath = $scope.HDWallet.defaultDPath;
+                    break;
                 default:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
             }
