@@ -231,7 +231,7 @@ nodes.nodeList = {
         'lib': new nodes.customNode('https://jsonrpc.ellaism.org', '')
     },
     'cus': {
-        'name': 'CUS',
+        'name': 'CUSTOM ETH',
         'type': nodes.nodeTypes.CUS,
         'eip155': true,
         'chainId': 99,
