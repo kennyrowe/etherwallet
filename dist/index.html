@@ -76,24 +76,6 @@
 
 <header class="{{curNode.name}} {{curNode.service}} {{curNode.service}} nav-index-{{gService.currentTab}}" aria-label="header" ng-controller='tabsCtrl' >
 
-
-  <div class="small announcement annoucement-danger">
-    <div class="container">
-      DON'T GET PHISHED, please! 🎣 Thank you! 🤗
-      <br />
-      1. BOOKMARK <a href="https://www.myetherwallet.com"> MYETHERWALLET.COM </a>
-      <span class="hidden-xs">
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        2. INSTALL <a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer">EAL</a>
-        or
-        <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">MetaMask</a>
-        or
-        <a href="https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige" target="_blank" rel="noopener noreferrer">Cryptonite</a>
-      </span>
-    </div>
-  </div>
-
-
 <section class="bg-gradient header-branding">
   <section class="container">
     
@@ -339,7 +321,7 @@
 
   <article class="block__wrap gen__1" ng-show="!wallet && !showGetAddress">
 
-    <section class="block__main gen__1--inner">
+    <section class="block gen__1--inner">
       <br />
       <h1 translate="NAV_GenerateWallet" aria-live="polite">
         Create New Wallet
@@ -389,89 +371,6 @@
       </div>
       <br>
     </section>
-
-    <section class="block__help">
-
-      <h2 translate="GEN_Help_0">
-        Already have a wallet somewhere?
-      </h2>
-
-      <ul>
-        <li>
-          <p>
-            <strong>
-              Ledger / TREZOR / Digital Bitbox
-            </strong>:
-            <span translate="GEN_Help_1">
-              Use your
-            </span>
-            <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id">
-              hardware wallet
-            </a>.
-            <span translate="GEN_Help_3">
-              Your device * is * your wallet.
-            </span>
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <p>
-            <strong>
-              MetaMask
-            </strong>
-            <span>
-              Connect via your
-            </span>
-            <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id">
-              MetaMask Extension
-            </a>.
-            <span translate="GEN_Help_MetaMask">
-              So easy! Keys stay in MetaMask, not on a phishing site! Try it today.
-            </span>
-          </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <p>
-            <strong>
-              Jaxx / imToken
-            </strong>
-            <span translate="GEN_Help_1">Use your</span>
-            <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id" translate="x_Mnemonic">
-              Mnemonic Phrase
-            </a>
-            <span translate="GEN_Help_2">
-              to access your account.
-            </span>
-        </p>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <p>
-            <strong>
-              Mist / Geth / Parity:
-            </strong>
-            <span translate="GEN_Help_1">
-              Use your
-            </span>
-            <a ng-click="globalService.currentTab=globalService.tabs.sendTransaction.id" translate="x_Keystore2">
-              Keystore File (UTC / JSON)
-            </a>
-            <span translate="GEN_Help_2">
-              to access your account.
-            </span>
-          </p>
-        </li>
-      </ul>
-
-    </section>
-
   </article>
 
 

@@ -77,6 +77,7 @@ var tabsCtrl                 = require('./controllers/tabsCtrl');
 var viewCtrl                 = require('./controllers/viewCtrl');
 var walletGenCtrl            = require('./controllers/walletGenCtrl');
 //var onboardingCtrl            = require('./controllers/onboardingCtrl');
+//var Ctrl            = require('./controllers/onboardingCtrl');
 var bulkGenCtrl              = require('./controllers/bulkGenCtrl');
 var decryptWalletCtrl        = require('./controllers/decryptWalletCtrl');
 var viewWalletCtrl           = require('./controllers/viewWalletCtrl');
