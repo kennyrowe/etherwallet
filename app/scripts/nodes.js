@@ -229,6 +229,15 @@ nodes.nodeList = {
         'estimateGas': true,
         'service': 'ellaism.org',
         'lib': new nodes.customNode('https://jsonrpc.ellaism.org', '')
+    },
+    'cus': {
+        'name': 'CUS',
+        'type': nodes.nodeTypes.CUS,
+        'eip155': true,
+        'chainId': 99,
+        'abiList': require('./abiDefinitions/custAbi.json'),
+        'estimateGas': true,
+        'lib': new nodes.customNode('https://eth.conchain.consulting/rpc', '')
     }
 };
 
