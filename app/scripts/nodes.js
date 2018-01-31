@@ -229,6 +229,19 @@ nodes.nodeList = {
         'estimateGas': true,
         'service': 'ellaism.org',
         'lib': new nodes.customNode('https://jsonrpc.ellaism.org', '')
+    },
+    'Custom': {
+        'name': 'Private',
+        'blockExplorerTX': '',
+        'blockExplorerAddr': '',
+        'type': nodes.nodeTypes.Custom,
+        'eip155': true,
+        'chainId': 99,
+        'tokenList': require('./tokens/custTokens.json'),
+        'abiList': require('./abiDefinitions/custAbi.json'),
+        'estimateGas': true,
+        'service': "Kenny's Private Network",
+        'lib': new nodes.customNode('https://eth.onchain.consulting/rpc', '')
     }
 };
 
